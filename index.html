@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="S3 网站收藏画廊。通过原创视觉海报，探索角色世界、交互实验与精彩的网页设计。">
+  <meta property="og:title" content="S3 Gallery — 值得逛的互联网">
+  <meta property="og:description" content="一张海报，一个入口。持续收藏那些让人眼前一亮的网站。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zzhuangxd.github.io/s3-gallery/assets/posters/L013-poolsuite.webp">
+  <title>S3 Gallery — 值得逛的互联网</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/gallery.css">
+  <script src="assets/gallery.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#collection">跳到网站收藏</a>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="S3 Gallery 首页"><span class="brand-symbol" aria-hidden="true">✳</span> S3<span class="brand-divider"></span>GALLERY</a>
+      <nav aria-label="主导航"><a href="#collection">逛逛收藏 <span>↘</span></a><a href="#about">关于 <span>↗</span></a></nav>
+      <button class="theme-toggle" type="button" aria-label="切换为深色外观" title="切换外观"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3 8.5 8.5 0 1 0 20.5 13.5Z"/></svg></button>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="main-title">
+        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> AN ONGOING COLLECTION <span class="edition">VOL. 001 / 2026</span></div>
+        <div class="intro-layout">
+          <h1 id="main-title">值得逛的<br><span class="title-last">互联网<span class="title-star" aria-hidden="true">✳</span><span class="title-period">。</span></span></h1>
+          <div class="intro-aside"><p class="intro-en">Small doors.<br>Wonderful worlds.</p><p class="intro-description">收集那些让人停留的网站。<br>一张海报，一个入口，<br>把好奇心交给下一次点击。</p><a class="random-link" href="https://poolsuite.net/" target="_blank" rel="noopener noreferrer">随便逛一个 <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="intro-bottom"><span>独立网站 · 有趣的交互 · 好的设计</span><a href="#collection" aria-label="向下浏览海报">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section id="collection" class="collection" aria-labelledby="collection-title">
+        <div class="collection-heading"><h2 id="collection-title">THE COLLECTION <span id="total-count">07</span></h2><div class="view-switch" role="group" aria-label="切换浏览方式"><button type="button" class="view-button is-active" data-view="grid" aria-label="海报视图" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="3" y="3" width="5" height="5"/><rect x="12" y="3" width="5" height="5"/><rect x="3" y="12" width="5" height="5"/><rect x="12" y="12" width="5" height="5"/></svg></button><button type="button" class="view-button" data-view="list" aria-label="清单视图" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M3 5H17M3 10H17M3 15H17"/></svg></button></div></div>
+        <div class="tools"><div class="filters" role="group" aria-label="按风格筛选"><button class="filter is-active" type="button" data-filter="all" aria-pressed="true">全部 <span>07</span></button><button class="filter" type="button" data-filter="play" aria-pressed="false">角色与趣味</button><button class="filter" type="button" data-filter="interact" aria-pressed="false">交互与实验</button><button class="filter" type="button" data-filter="visual" aria-pressed="false">排版与视觉</button></div><label class="search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="search" type="search" placeholder="搜网站 / 风格 / 编号" autocomplete="off" aria-label="搜索网站、风格或 L 编号"><kbd aria-hidden="true">/</kbd></label></div>
+        <p class="result-note" id="result-note" role="status" aria-live="polite">正在打开收藏…</p>
+        <div class="gallery" id="gallery"></div>
+        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">✳</span><h3>好像还没收录这个世界。</h3><p>试试网站名、风格，或 L 编号。</p><button id="reset" type="button">查看全部收藏 ↗</button></div>
+        <noscript><p>以下链接可直接访问；启用 JavaScript 可查看完整海报画廊。</p><ul><li><a href="https://en.dinotaeng.com/">L005 · DINOTAENG</a></li><li><a href="https://raspberrytokyo.com/">L006 · Raspberry Studio</a></li><li><a href="https://toyfight.co/">L012 · ToyFight</a></li><li><a href="https://poolsuite.net/">L013 · Poolsuite</a></li><li><a href="https://monopo.london/">L014 · monopo london</a></li><li><a href="https://resn.co.nz/">L015 · Resn</a></li><li><a href="https://www.jomor.design/">L016 · Jomor Design</a></li></ul></noscript>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title"><span class="about-star" aria-hidden="true">✳</span><div><p class="eyebrow">A LIVING GALLERY</p><h2 id="about-title">互联网很大，<br>留一点位置给惊喜。</h2><p>这是 S3 的网站收藏入口。我们用原创海报记录每个网站带来的第一份灵感，也为下一次想起它时，留下一扇容易找到的门。</p><p class="small">海报是对各站风格的 AI 视觉演绎，原站内容归各自作者所有。收藏持续更新。</p></div><a class="source-link" href="https://github.com/zzhuangXD/s3-gallery" target="_blank" rel="noopener noreferrer">收藏档案 & 更新记录 <span aria-hidden="true">↗</span></a></section>
+    </main>
+
+    <footer><a class="footer-brand" href="./">S3 GALLERY <span aria-hidden="true">✳</span></a><span>CURATED BY UXIE · MADE BY HECATE</span><span>最近更新 <time id="last-updated" datetime="2026-10-29">2026.10.29</time></span><a href="#" aria-label="回到顶部">BACK TO TOP ↑</a></footer>
+  </div>
+</body>
+</html>

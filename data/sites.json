@@ -1,0 +1,98 @@
+{
+  "collection": "S3",
+  "updated": "2026-10-29",
+  "sites": [
+    {
+      "id": "L005",
+      "name": "DINOTAENG",
+      "url": "https://en.dinotaeng.com/",
+      "domain": "en.dinotaeng.com",
+      "category": "play",
+      "label": "角色与趣味",
+      "description": "沿着小径走进角色的世界，让品牌变成一座可以探索的小镇。",
+      "tags": ["角色 IP", "品牌世界观", "插画"],
+      "poster": "assets/posters/L005-dinotaeng.webp",
+      "posterAlt": "以 DINOTAENG 为主标题，青绿森林、蓝色溪流、小屋与圆润角色组成的品牌海报",
+      "color": "#7b9b52"
+    },
+    {
+      "id": "L006",
+      "name": "Raspberry Studio",
+      "subtitle": "树莓工作室",
+      "url": "https://raspberrytokyo.com/",
+      "domain": "raspberrytokyo.com",
+      "category": "play",
+      "label": "角色与趣味",
+      "description": "像认识游戏里的伙伴一样认识团队，把数字艺术做成一次轻松的游玩。",
+      "tags": ["像素角色", "游戏卡牌", "团队介绍"],
+      "poster": "assets/posters/L006-raspberry.webp",
+      "posterAlt": "奶油纸面上洋红色卡牌与像素水果英雄的树莓工作室海报",
+      "color": "#ce326a"
+    },
+    {
+      "id": "L012",
+      "name": "ToyFight",
+      "url": "https://toyfight.co/",
+      "domain": "toyfight.co",
+      "category": "interact",
+      "label": "交互与实验",
+      "description": "敲下一条命令，打开另一条路。把浏览网站变成有惊喜的探索。",
+      "tags": ["命令终端", "探索导航", "创意工作室"],
+      "poster": "assets/posters/L012-toyfight.webp",
+      "posterAlt": "奶油底色、粉紫色块、像素字体与立体命令终端组成的 ToyFight 海报",
+      "color": "#e7afe1"
+    },
+    {
+      "id": "L013",
+      "name": "Poolsuite",
+      "url": "https://poolsuite.net/",
+      "domain": "poolsuite.net",
+      "category": "interact",
+      "label": "交互与实验",
+      "description": "打开一台永远停在夏天的电脑，在复古窗口里给生活换一首配乐。",
+      "tags": ["复古桌面", "音乐播放器", "窗口交互"],
+      "poster": "assets/posters/L013-poolsuite.webp",
+      "posterAlt": "粉色桌面上叠放的复古音乐窗口与蓝色泳池夏日海报",
+      "color": "#e7b9b9"
+    },
+    {
+      "id": "L014",
+      "name": "monopo london",
+      "url": "https://monopo.london/",
+      "domain": "monopo.london",
+      "category": "visual",
+      "label": "排版与视觉",
+      "description": "在颗粒渐变间移动镜片，看语言与色彩在同一个画面里相遇。",
+      "tags": ["颗粒渐变", "双语镜片", "感官设计"],
+      "poster": "assets/posters/L014-monopo.webp",
+      "posterAlt": "黑底上橙蓝颗粒光带与玻璃透镜构成的 monopo london 抽象海报",
+      "color": "#fa8c4b"
+    },
+    {
+      "id": "L015",
+      "name": "Resn",
+      "url": "https://resn.co.nz/",
+      "domain": "resn.co.nz",
+      "category": "interact",
+      "label": "交互与实验",
+      "description": "一枚黑色晶体，一次长按。进入不可预测的数字感官实验。",
+      "tags": ["黑色晶体", "长按交互", "视觉实验"],
+      "poster": "assets/posters/L015-resn.webp",
+      "posterAlt": "暗色空间里悬浮的黑曜石晶体与虹彩反射实验海报",
+      "color": "#7975a7"
+    },
+    {
+      "id": "L016",
+      "name": "Jomor Design",
+      "url": "https://www.jomor.design/",
+      "domain": "jomor.design",
+      "category": "visual",
+      "label": "排版与视觉",
+      "description": "让字体占据舞台，让图像打破秩序。滚动本身也是一场编排。",
+      "tags": ["超大字体", "错位图像", "滚动编排"],
+      "poster": "assets/posters/L016-jomor.webp",
+      "posterAlt": "巨幅实验字体与错位摄影拼贴的 Jomor Design 编辑设计海报",
+      "color": "#a7b4a1"
+    }
+  ]
+}

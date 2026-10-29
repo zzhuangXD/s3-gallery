@@ -1,0 +1,12 @@
+{
+  "name": "s3-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A living poster gallery for the S3 website collection",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

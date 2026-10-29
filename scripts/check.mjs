@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import { readFile, stat } from 'node:fs/promises';
+const root = new URL('../', import.meta.url);
+const collection = JSON.parse(await readFile(new URL('data/sites.json', root), 'utf8'));
+assert.equal(collection.collection, 'S3');
+assert.match(collection.updated, /^\d{4}-\d{2}-\d{2}$/);
+assert.ok(collection.sites.length > 0);
+const ids = new Set();
+const urls = new Set();
+const html = await readFile(new URL('index.html', root), 'utf8');
+for (const site of collection.sites) {
+  assert.match(site.id, /^L\d{3,}$/);
+  assert.ok(!ids.has(site.id), `Duplicate ID ${site.id}`);
+  ids.add(site.id);
+  const url = new URL(site.url);
+  assert.equal(url.protocol, 'https:');
+  assert.ok(!urls.has(url.href), `Duplicate URL ${url.href}`);
+  urls.add(url.href);
+  assert.ok(['play', 'interact', 'visual'].includes(site.category));
+  for (const key of ['name', 'label', 'description', 'posterAlt', 'domain']) assert.ok(site[key]?.length, `Missing ${key}: ${site.id}`);
+  assert.ok(site.tags.length > 0 && site.tags.every(tag => typeof tag === 'string'));
+  assert.match(site.poster, /^assets\/posters\/[A-Za-z0-9-]+\.webp$/);
+  const image = await readFile(new URL(site.poster, root));
+  assert.equal(image.toString('ascii', 0, 4), 'RIFF', `Not WebP: ${site.poster}`);
+  assert.equal(image.toString('ascii', 8, 12), 'WEBP');
+  assert.ok(image.length > 3000 && image.length < 900000, `Unexpected poster size: ${site.poster}`);
+  assert.ok(html.includes(site.url), `Update the no-JS link list for ${site.id}`);
+}
+for (const path of ['assets/gallery.css', 'assets/gallery.js', 'assets/favicon.svg', '.nojekyll']) await stat(new URL(path, root));
+console.log(`PASS: ${ids.size} unique sites, HTTPS links, poster files, metadata, and no-JS links.`);
